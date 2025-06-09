@@ -1,0 +1,140 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1F1F1F;
+}
+
+.logo img {
+    max-width: 100px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 15px
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+ 
+header .arrow {
+  display: inline-block;
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  transition: transform 0.3s;
+  transform: rotate(0deg);
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+header .dropdown:hover .arrow {
+    transform: rotate(180deg); 
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-left: auto;
+    z-index: 999;
+}
+  
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: #FFD000;
+    border-radius: 2px;
+}
+  
+header .search-bar {
+  padding: 12px 17px;
+  font-size: 19px;
+  border: none;
+  border-radius: 25px;
+  width: 470px;
+}  
+
+@media (max-width: 1024px) {
+  header .search-bar {
+    display: block;
+    width: 350px;
+    font-size: 14px;
+  }
+
+  header nav ul {
+    gap: 45px; 
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+    header .search-bar {
+    display: none;
+    }
+
+    header {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+  
+    nav {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      background-color: #1F1F1F;
+      flex-direction: column;
+    }
+  
+    nav.active {
+      max-height: 500px;
+    }
+  
+    nav ul.nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0;
+      display: flex;
+    }
+
+}
+
+
