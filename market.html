@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/categorias.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="./image/logo.png" alt="Logo">
+        </div>
+        <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./market.html">Marketplace</a></li>
+                <li class="dropdown">
+                    <a href="#">Mi Cuenta <span class="arrow"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="./login.html" onclick="abrirLoginModal()">Iniciar sesión</a></li>
+                        <li><a href="./registro.html">Registro</a></li>
+                        <li><a href="./likes.html">Mis Likes</a></li>
+                    </ul>
+                </li> 
+                <li><a href="./acercade.html">Acerca de nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="text" class="search-bar" placeholder="Escribe y presiona Enter...">
+    </header>
+
+    <section>
+        <nav class="Categorias">
+            <ul class="nav-categorias">
+                <li><a href="#">Perifericos</a></li>
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Camaras</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Pc's</a></li>
+                <li><a href="#">Consolas</a></li>
+                <li><a href="#">Componentes</a></li>
+            </ul>
+        </nav>
+    </section>
+
+     <main>
+    <section class="productos-grid">
+
+      <div class="producto-card">
+        <img src="./image/LogitechProX.jpg" alt="Auriculares Logitech Pro X">
+        <h3>Auriculares Logitech Pro X</h3>
+        <p class="precio">Precio: 1200 Bs</p>
+        <p class="estado">Estado: Nuevo</p>
+        <p class="anunciante">Vendedor: Juan Pérez</p>
+        <a href="./detalle.html" class="ver-detalle">Detalle</a>
+      </div>
+
+      <div class="producto-card">
+        <img src="./image/monitorCurvo.jpg" alt="Monitor Curvo Samsung">
+        <h3>Monitor Curvo Samsung</h3>
+        <p class="precio">Precio: 1800 Bs</p>
+        <p class="estado">Estado: Nuevo</p>
+        <p class="anunciante">Vendedor: María López</p>
+        <a href="./detalle2.html" class="ver-detalle">Detalle</a>
+      </div>
+
+      <div class="producto-card">
+        <img src="./image/pc gamer ryzen 5.jpg" alt="PC Gamer Ryzen 5">
+        <h3>PC Gamer Ryzen 5</h3>
+        <p class="precio">Precio: 6500 Bs</p>
+        <p class="estado">Estado: Nuevo</p>
+        <p class="anunciante">Vendedor: Carlos Gómez</p>
+        <a href="./detalle3.html" class="ver-detalle">Detalle</a>
+      </div>
+
+      <div class="producto-card">
+        <img src="./image/Pley5.jpg" alt="PlayStation 5">
+        <h3>PlayStation 5</h3>
+        <p class="precio">Precio: 4000 Bs</p>
+        <p class="estado">Estado: Nuevo</p>
+        <p class="anunciante">Vendedor: Sofía Rodríguez</p>
+        <a href="./detalle4.html" class="ver-detalle">Detalle</a>
+      </div>
+
+      <div class="producto-card">
+        <img src="./image/iphone12.jpg" alt="iPhone 12">
+        <h3>iPhone 12 - 128gb</h3>
+        <p class="precio">Precio: 3000 Bs</p>
+        <p class="estado">Estado: Nuevo</p>
+        <p class="anunciante">Vendedor: Andrés Torres</p>
+        <a href="./detalle5.html" class="ver-detalle">Detalle</a>
+       </div>
+
+        <div class="producto-card">
+            <img src="./image/Canon4000D.jpg" alt="Cámara Canon EOS R">
+            <h3>Cámara Canon EOS R</h3>
+            <p class="precio">Precio: 2500 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Laura Martínez</p>
+            <a href="./detalle6.html" class="ver-detalle">Detalle</a>
+        </div>
+        
+        <div class="producto-card">
+            <img src="./image/samsungSmart.jpg" alt="Televisor Samsung 55">
+            <h3>Televisor Samsung 55"</h3>
+            <p class="precio">Precio: 2200 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Pedro Fernández</p>
+            <a href="./detalle7.html" class="ver-detalle">Detalle</a>
+        </div>
+
+        <div class="producto-card">
+            <img src="./image/laptop15.jpg" alt="Laptop">
+            <h3>Laptop HP 15</h3>
+            <p class="precio">Precio: 2800 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Ana García</p>
+            <a href="./detalle8.html" class="ver-detalle">Detalle</a>
+        </div>
+
+        <div class="producto-card">
+            <img src="./image/grafica3070.png" alt="Tarjeta Gráfica RTX 3070">
+            <h3>Tarjeta Gráfica RTX 3070</h3>
+            <p class="precio">Precio: 1500 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Luis Ramírez</p>
+            <a href="./detalle9.html" class="ver-detalle">Detalle</a>
+        </div>
+
+        <div class="producto-card">
+            <img src="./image/tecladow.jpeg" alt="teclado wooting">
+            <h3>Teclado wooting 60HE</h3>
+            <p class="precio">Precio: 700 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Marta Jiménez</p>
+            <a href="./detalle10.html" class="ver-detalle">Detalle</a>
+        </div>
+
+        <div class="producto-card">
+            <img src="./image/tablet.jpg" alt="tablet">
+            <h3>Tablet Xiaomi</h3>
+            <p class="precio">Precio: 3400 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Maria mendez</p>
+            <a href="./detalle11.html" class="ver-detalle">Detalle</a>
+        </div>
+        <div class="producto-card">
+            <img src="./image/ihpone 16.jpg" alt="Iphone 16">
+            <h3>Iphone 16 Pro Max</h3>
+            <p class="precio">Precio: 9000 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Roberto Díaz</p>
+            <a href="./detalle12.html" class="ver-detalle">Detalle</a>
+        </div>
+
+        <div class="producto-card">
+            <img src="./image/monitorMsi.jpg" alt="Monitor MSI">
+            <h3>Monitor MSI</h3>
+            <p class="precio">Precio: 3500 Bs</p>
+            <p class="estado">Estado: Nuevo</p>
+            <p class="anunciante">Vendedor: Elena Torres</p>
+            <a href="./detalle13.html" class="ver-detalle">Detalle</a>
+        </div>
+
+    </section>
+  </main>
+
+
+</body>
+
+</html>
